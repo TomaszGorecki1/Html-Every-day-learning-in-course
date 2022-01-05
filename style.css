@@ -1,0 +1,78 @@
+body /*main for whole site, things like backgorund etc*/
+{
+    background-color: gray;
+    font-family: Verdana;
+    font-size: 20px;
+    color:white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+}
+h1
+{
+font-size: 48px;
+}
+/*Not visited link*/
+a:link 
+{
+color:whitesmoke;
+text-decoration: none;
+}
+/*visited link*/
+a:visited 
+{
+    color:whitesmoke;
+    text-decoration: none;
+}
+/* link hover*/
+a:hover 
+{
+    color: purple;
+}
+a:active /* as the user is clicking on the link*/
+{
+    color:rebeccapurple;
+}
+#contianer /* All divs in one, whole site */
+{
+    width: 1000px; /*how width is the site, in here it is stable amount not changable */
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo /*Header of the website*/
+{
+    background-color: black;
+    text-align: center;
+    text-align: center;
+	padding: 15px;
+}
+#nav /*Navigation bar with categories on left side of the site*/
+{
+    float:left;
+    background-color: sienna;
+    width: 120px;
+	min-height: 620px;
+	padding: 10px;
+}
+#content /*Main thing in the site, middle, text photos etc.*/
+{
+    float: left;
+	padding: 20px;
+	width: 640px;
+}
+#ad /* Right box, genrally for add, random photo etc. */
+{
+    float: right;
+	width: 160px;
+	min-height: 620px;
+	padding: 10px;
+    background-color: lightslategrey;
+}
+#footer /*footer just text in box on down side of the page*/
+{
+    clear:both;
+    background-color: black;
+    color:white;
+    text-align: center;
+	padding: 20px;
+}
