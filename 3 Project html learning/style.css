@@ -1,0 +1,109 @@
+body /*main for whole site, things like backgorund etc*/
+{
+    background-color: #303030;
+    color: #ffffff;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 20px;
+}
+#contianer /* All divs in one, whole site */
+{
+    width: 1000px; /*how width is the site, in here it is stable amount not changable */
+    margin-left: auto;
+    margin-right: auto;
+}
+.rectangle /*rectangle on he page, it is class for it can be used for multiple objects*/
+{
+    width: 960px;
+    margin: 20px;
+    text-align: center;
+}
+.square /*class for big square on the page*/
+{
+    width: 50%;
+    float: left;
+}
+#logo /*Header of the website*/
+{
+    float: left;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 70px;
+    width: 600px;
+    text-align: left;
+}
+#clock /*Timer it tells the time if you look at it*/
+{
+    float: left;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 70px;
+    text-align: left;
+}
+.tile1 /*one of the square elements in bigger square*/
+{
+    margin: 10px;
+    width: 230px;
+    height: 142px;
+    background-color: #3095d3;
+    float: left;
+}
+.tile2 /*other of the square elements in bigger square*/
+{
+    margin: 10px;
+    width: 230px;
+    height: 142px;
+    background-color: #666666;
+    float: left;
+}
+.tile3 /*other other of the square elements in bigger square*/
+{
+    margin: 10px;
+    width: 230px;
+    height: 142px;
+    background-color: #93c748;
+    float: left;
+}
+.tile4 /* bigger, long  rectangle in bigger square*/
+{
+    margin: 10px;
+    width: 480px;
+    height: 142px;
+    background-color: #ee5a32;
+}
+.tile5 /* a little bigger rectangle inside bigger squares*/
+{
+    margin: 10px;
+    width: 480px;
+    height: 304px;
+    background-color: #666666;
+}
+.yt /*small square with social media logo in it*/
+{
+    margin: 10px;
+    width: 105px;
+    height: 142px;
+    background-color: #d94348;
+    float: left;
+}
+.fb /*small square with social media logo in it*/
+{
+    margin: 10px;
+    width: 105px;
+    height: 142px;
+    background-color: #4668b3;
+    float: left;
+}
+.gplus /*small square with social media logo in it*/
+{
+    margin: 10px;
+    width: 105px;
+    height: 142px;
+    background-color: #d95333;
+    float: left;
+}
+.tw /*small square with social media logo in it*/
+{
+    margin: 10px;
+    width: 105px;
+    height: 142px;
+    background-color: #3095d3;
+    float: left;
+}
