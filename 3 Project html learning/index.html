@@ -14,24 +14,39 @@
         <meta name="author" content="Tomasz Górecki"/> <!--Author, useless thing -->
         <meta charset="utf-8"/> <!--Polish letters like ą -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!--Useless-->
-        
     </head>
 
-    <body>
+    <body onload="odliczanie();">
 
         <div id="container">
 
             <div class="rectangle">
 
+                <a href="index.html" class="tilelinkblock">
+                
                 <div id="logo"> <!--Upper text, header -->
 
                     Jan Kowalski
 
                 </div>
 
+                 </a>
+
                 <div id="clock"> <!--Clock, it does tell you what the time is-->
 
-                    12:00:00
+                    <script>
+                        function oliczanie()
+                        {
+                            var dzisiaj=new Date();
+                            var godzina =dzisiaj.getHours();
+                            if(godzina<10)godzina="0"+godzina;
+                            var minuta=dzisiaj.minuta="0"+minuta;
+                            var sekunda=dzisiaj.getSeconds();
+                            if(sekunda<10)sekunda="0"+sekunda;
+                            document.getElementById("clock").innerHTML=godzina+":"+minuta+":"+sekunda;
+                            setTimeout("odliczanie(",1000);
+                        }
+                    </script>
 
                 </div>
 
@@ -41,55 +56,103 @@
 
             <div class="square"> <!--one of the big square elements-->
 
-                <div class="tile1">1</div> <!--little squares inside bigger squares-->
+                <div class="tile1"> <!--little squares inside bigger squares-->
 
-                <div class="tile1">1</div> <!--little squares inside bigger squares-->
+                   <a href="who.html" class="tilelink" > <i class="icon-user"></i></br>Who am I?</a>
+
+                </div> 
+
+                <a href="offer.html" class="tilelinkblock">
+
+                <div class="tile1"> <!--little squares inside bigger squares-->
+
+                    <i class="icon-keyboard"></i></br>My offer?
+
+                </div> 
+
+                 </a>
 
                 <div style="clear: both;"></div> <!--making fucking float left work-->
 
-                <div class="tile2">2</div> <!--other little squares inside bigger squares-->
+                <a href="contact.html" class="tilelinkblock">
 
-                <div class="tile3">3</div> <!--other other little squares inside bigger squares-->
+                <div class="tile2"> <!--other little squares inside bigger squares-->
+
+                    <i class="icon-mail"></i></br>Contact.
+                </div> 
+
+                </a>
+
+                <a href="apple.html" class="tilelinkblock">
+
+                <div class="tile3"> <!--other other little squares inside bigger squares-->
+
+                    <i class="icon-apple"></i></br>Juan.
+
+                </div> 
+
+                </a>
 
                 <div style="clear: both;"></div> <!--making fucking float left work-->
 
-                <div class="tile4">4</div> <!-- bigger, long one rectangle inside bigger squares-->
+                <div class="tile4">Yellowpope</div> <!-- bigger, long one rectangle inside bigger squares-->
 
             </div>
 
             <div class="square"> <!--one of the big square elements-->
 
-                <div class="tile5">5</div> <!--a little bigger rectangle inside bigger squares-->
+                <div class="tile5"> <!--a little bigger rectangle inside bigger squares-->
 
-                <div class="yt">
+                    Subpage Title<br/><br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum molestie ex. Duis elementum condimentum nibh vel feugiat. Aenean posuere mollis egestas. Nunc lacus risus, aliquet sit amet turpis a, sodales elementum neque. Suspendisse potenti. Quisque pharetra lorem nec dignissim bibendum.
+
+                </div> 
+
+                <a href="https://www.youtube.com/channel/UCcjUrH2XJGm3xVPmjShjMlg/videos" target="_blank" class="tilelinkblock">
+
+                <div class="yt"> <!--small square with social media logo in it-->
 
                     <i class="icon-youtube-play"></i>
 
-                </div> <!--small square with social media logo in it-->
+                </div> 
 
-                <div class="fb">
+                 </a>
+
+                 <a href="https://www.facebook.com"target="_blank" class="tilelinkblock">
+
+                <div class="fb"> <!--small square with social media logo in it-->
 
                     <i class="icon-facebook"></i>
 
-                </div> <!--small square with social media logo in it-->
+                </div> 
 
-                <div class="gplus">
+                </a>
+
+                <a href="https://plus.google.com/"target="_blank" class="tilelinkblock">
+
+                <div class="gplus"> <!--small square with social media logo in it-->
                     
                     <i class="icon-googleplus"></i>
 
-                </div> <!--small square with social media logo in it-->
+                </div> 
 
-                <div class="tw">
+                 </a>
+
+                 <a href="https://twitter.com/Tomigun2137" target="_blank" class="tilelinkblock">
+
+                <div class="tw"><!--small square with social media logo in it-->
 
                     <i class="icon-twitter-squared"></i>
 
-                </div> <!--small square with social media logo in it-->
+                </div> 
+
+                 </a>
 
                 <div style="clear: both;"></div>
 
             </div> 
 
-            <div class="rectangle">2022 &copy;Janusz Pawlaczs - Portfolio</div>
+            <div class="rectangle">2022 &copy;Janusz Pawlaczs - Portfolio</div> <!-- mprmal footer-->
 
         </div>
 

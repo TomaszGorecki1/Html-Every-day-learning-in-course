@@ -1,0 +1,11 @@
+###PROTEC FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow, Deny
+Deny from All
+</Files Match>
+
+RewriteEngine on
+RewriteRule juan-pablo-eins index.html
+RewriteRule juan-pablo-zwei who.html
+RewriteRule juan-pablo-drei contact.html
+RewriteRule juan-pablo-vier apple.html

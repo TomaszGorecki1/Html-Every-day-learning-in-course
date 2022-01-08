@@ -44,6 +44,11 @@ body /*main for whole site, things like backgorund etc*/
     height: 142px;
     background-color: #3095d3;
     float: left;
+    text-align: center;
+}
+.tile1:hover /*When you drag your mouse above the square elemts*/
+{
+    background-color: #2084c2;
 }
 .tile2 /*other of the square elements in bigger square*/
 {
@@ -52,6 +57,11 @@ body /*main for whole site, things like backgorund etc*/
     height: 142px;
     background-color: #666666;
     float: left;
+    text-align: center;
+}
+.tile2:hover /*When you drag your mouse above the square elemts*/
+{
+    background-color: #555555;
 }
 .tile3 /*other other of the square elements in bigger square*/
 {
@@ -60,20 +70,31 @@ body /*main for whole site, things like backgorund etc*/
     height: 142px;
     background-color: #93c748;
     float: left;
+    text-align: center;
+}
+.tile3:hover /*When you drag your mouse above the square elemts*/
+{
+    background-color: #82b637;
 }
 .tile4 /* bigger, long  rectangle in bigger square*/
 {
     margin: 10px;
-    width: 480px;
-    height: 142px;
+    width: 420px;
+    height: 82px;
     background-color: #ee5a32;
+    text-align: center;
+    font-size: 36px;
+    padding: 30px;
+    line-height: 150%;
 }
 .tile5 /* a little bigger rectangle inside bigger squares*/
 {
     margin: 10px;
-    width: 480px;
-    height: 304px;
+    width: 420px;
+    height: 244px;
     background-color: #666666;
+    text-align: justify;
+    padding: 30px;
 }
 .yt /*small square with social media logo in it*/
 {
@@ -83,6 +104,10 @@ body /*main for whole site, things like backgorund etc*/
     background-color: #d94348;
     float: left;
 }
+.yt:hover
+{
+    background-color: #c83237;
+}
 .fb /*small square with social media logo in it*/
 {
     margin: 10px;
@@ -90,6 +115,10 @@ body /*main for whole site, things like backgorund etc*/
     height: 142px;
     background-color: #4668b3;
     float: left;
+}
+.fb:hover
+{
+    background-color: #3557a2;
 }
 .gplus /*small square with social media logo in it*/
 {
@@ -99,6 +128,10 @@ body /*main for whole site, things like backgorund etc*/
     background-color: #d95333;
     float: left;
 }
+.gplus:hover
+{
+    background-color: #c84222;
+}
 .tw /*small square with social media logo in it*/
 {
     margin: 10px;
@@ -106,4 +139,21 @@ body /*main for whole site, things like backgorund etc*/
     height: 142px;
     background-color: #3095d3;
     float: left;
+}
+.tw:hover
+{
+    background-color: #2084c2;
+}
+a.tilelink /*stylizing likns tiles*/
+{
+    color:white;
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    height: 142px;
+}
+a.tilelinkblock /*stylizing likns tiles but for whole block*/
+{
+    color:white;
+    text-decoration: none;
 }
