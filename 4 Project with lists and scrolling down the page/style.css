@@ -1,0 +1,85 @@
+body
+{
+    background: url(img/bckg.png) repeat;
+    background-size: 100%; ;
+    margin: 0px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 25px;
+}
+#logo
+{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: #FFE81F;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 0px 5px 0px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #FFE81F;
+    text-shadow: 
+    2px 2px 0 #4d4d00,
+    -2px 2px 0 #4d4d00,
+    -2px -2px 0 #4d4d00,
+    2px -2px 0 #4d4d00;
+}
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: 	black;
+    width: 878px;
+    padding: 10px;
+    border-left: 1px solid #FFE81F;
+    border-right: 1px solid #FFE81F;
+    color: white;
+    text-shadow: 
+    2px 2px 0 black,
+    -2px 2px 0 black,
+    -2px -2px 0 black,
+    2px -2px 0 black;
+}
+#table
+{
+    width:780px;
+    padding-left: 100px;
+}
+ol
+{
+    margin-top: 5px;
+}
+ol>li
+{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5px;
+    letter-spacing: 3px;
+}
+ol > li >ul
+{
+    font-size:18px;
+    text-transform: none;
+    font-weight: 400;
+    padding: 0px;
+    letter-spacing: 0px;
+    margin-top: 5px;
+    margin-left: 30px;
+    list-style-type: none;
+}
+ol > li >ul >li
+{
+    margin: 0px;
+}
+ol>li>ul>li::before
+{
+    color: #FFE81F;
+    content: "♦";
+    margin-right: 5px;
+}
+.slajd
+{
+    padding: 20px 40px;
+    text-align: justify;
+}
