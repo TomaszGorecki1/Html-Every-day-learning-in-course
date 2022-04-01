@@ -6,10 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
-<body>
-    <h4>heading</h4>
-    <a href="#">jakiś tekst</a>
-    <p>paragraf</p>
-    <div>some text</div>
+<body id="body">
+
+    
+    <p id="p">
+        <form id="form" action="">
+            <input id="input" onclick="inputClicked(event);" type="text">
+        </form>
+    </p>
+    <script>
+
+        let input = document.getElementById("input")
+        input.onclick = function inputClicked(event){
+            console.log("input klikniety");
+        }
+
+        let body = document.getElementById("body");
+        function onKeyDown(event){
+            console.log(event);
+            console.log("Klawisz klikniety: " + event.key);
+
+            body.removeEventListener("keydown", onKeyDown);
+        }
+        body.addEventListener("keydown", onKeyDown);
+
+       /* function inputClicked(event) {
+            console.log(event);
+            console.log("input klikniety")
+          }*/
+    </script>
+
 </body>
 </html>
