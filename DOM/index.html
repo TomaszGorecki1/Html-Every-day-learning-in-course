@@ -4,38 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>DOM PROJECT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
+<body>
 
-    
-    <p id="p">
-        <form id="form" action="">
-            <input id="input" onclick="inputClicked(event);" type="text">
-        </form>
-    </p>
-    <script>
+    <main>
 
-        let input = document.getElementById("input")
-        input.onclick = function inputClicked(event){
-            console.log("input klikniety");
-        }
+        <section id="search-section">
 
-        let body = document.getElementById("body");
-        function onKeyDown(event){
-            console.log(event);
-            console.log("Klawisz klikniety: " + event.key);
+            <input type="text" id="search-input" placeholder="Wpisz serial">
 
-            body.removeEventListener("keydown", onKeyDown);
-        }
-        body.addEventListener("keydown", onKeyDown);
+        </section>
 
-       /* function inputClicked(event) {
-            console.log(event);
-            console.log("input klikniety")
-          }*/
-    </script>
+        <section class="shows-data-section">
 
+            <div class="show-box">
+
+                <img src="https://static.tvmaze.com/uploads/images/medium_portrait/41/104550.jpg" alt="">
+
+                <div class="show-title">
+
+
+
+                </div>
+
+                <div class="show-genres">
+
+
+
+                </div>
+
+                <div class="show-overview">
+
+                    info
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="tv-maz-info">
+
+            <a href="https://www.tvmaze.com/api">Tv maze api used.</a>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
