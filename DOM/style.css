@@ -14,20 +14,27 @@ body
     justify-content: center;
     padding: 10px;
     background-color: #4c4c4c;
+   
 }
 #search-section input#search-input
 {
-    display: inline-block;
+    display: block;
+  margin-right: auto;
+  margin-left: auto;
     padding: 5px;
     color: silver;
     background-color: black;
     border: 1px solid gray;
     font-size: 1.3rem;
+    text-align: center;
+    justify-content: center;
 }
 .shows-data-section
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .show-box
@@ -93,8 +100,15 @@ body
 {
     padding: 10px;
     text-align: center;
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+    display: block;
+    position: fixed;
+    bottom: 0;
 }
 #tv-maze-info a
 {
     color: gray;
+    
 }
